@@ -1,0 +1,21 @@
+@import "tailwindcss";
+body {
+  font-family: "Inter", sans-serif;
+}
+.namefont {
+  font-family: "Arapey", serif;
+}
+.lindenFont {
+  font-family: "Linden Hill", serif;
+}
+@keyframes slowSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.groupAni:hover{
+  animation: slowSpin 8s linear infinite;
+}
