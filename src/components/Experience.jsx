@@ -46,10 +46,10 @@ const Experience = () => {
         return (
           <div
             key={item.id}
-            className="flex cursor-pointer h-10 justify-between items-center px-3 py-7 border-b hover:scale-95 transition-transform duration-200 hover:bg-neutral-200/30 border-neutral-600/20"
+            className="flex cursor-pointer h-10 justify-between items-center px-3 py-7 border-b hover:scale-x-95 transition-transform duration-200 hover:bg-neutral-200/30 border-neutral-600/20"
           >
             <div className="flex items-center justify-center gap-3">
-              <img className="w-7" src={item.logo} alt="" />
+              <img className="w-6" src={item.logo} alt="" />
               <div className="flex gap-3">
                 <h1 className="font-semibold text-neutral-500">{item.name}</h1>
                 <Dot className="text-neutral-500/60" strokeWidth={3} />

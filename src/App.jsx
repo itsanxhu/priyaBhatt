@@ -5,12 +5,12 @@ import { useState } from "react";
 const App = () => {
   const [play, setPlay] = useState(false);
   return (
-    <div className="max-w-4xl min-h-screen mx-auto border-x border pt-3 border-neutral-600/20">
+    <div className="max-w-4xl min-h-screen mx-auto pt-3 border-x border-neutral-600/20">
       {/* Header */}
       <div className="h-18 flex justify-between items-center px-8">
         <div className="flex items-center gap-1">
-          <MapPin size={18} className="text-neutral-500/70" />
-          <p className="text-neutral-500/70 tracking-tight leading-none text-sm">
+          <MapPin size={18} className="text-neutral-500/80" />
+          <p className="text-neutral-500/80 tracking-tight leading-none text-sm">
             Uttarakhand, India
           </p>
         </div>
@@ -52,33 +52,33 @@ const App = () => {
               }`}
             />
           </div>
-
-          <div className="absolute right-10 top-24">
-            <p className="rounded-full tracking-tight bg-neutral-200/30 px-3 border-2 text-neutral-500 border-dashed py-1 text-xs border-neutral-600/20 flex justify-center items-center gap-1">
+          <div className="absolute right-10 top-24 cursor-pointer hover:scale-95 active:scale-90 transition-transform duration-200">
+            <p className="rounded-full tracking-tight bg-green-400/10 text-green-600/90 border-green-600/40 transition-colors duration-100 px-3 border-2 border-dashed py-1 text-xs flex justify-center items-center gap-1">
               <div className="h-3 w-3 bg-green-300/40 rounded-full flex justify-center items-center">
                 <div className="h-1.5 w-1.5 bg-green-400 rounded-full"></div>
               </div>
               Open to Work
             </p>
           </div>
-          <div className="absolute left-0 top-10">
-            <p className="rounded-full tracking-tight bg-neutral-200/30 px-3 border-2 text-neutral-500 border-dashed py-1 text-xs border-neutral-600/20 flex justify-center items-center gap-1">
+          <div className="absolute left-0 top-10 cursor-pointer hover:scale-95 active:scale-90 transition-transform duration-200">
+            <p className="rounded-full tracking-tight text-orange-600/90 bg-orange-400/10 border-orange-600/40 transition-colors duration-100 px-3 border-2 border-dashed py-1 text-xs flex justify-center items-center gap-1">
               <div className="h-3 w-3 bg-orange-300/40 rounded-full flex justify-center items-center">
                 <div className="h-1.5 w-1.5 bg-orange-400 rounded-full"></div>
               </div>
               Product Designer
             </p>
           </div>
-          <h1
-            className="text-4xl tracking-tight namefont italic cursor-pointer text-neutral-900"
+          <div
+            className="gap-2 tracking-tight italic cursor-pointer text-neutral-900"
             onMouseEnter={() => setPlay(true)}
             onMouseLeave={() => setPlay(false)}
           >
-            Priya Bhatt
-          </h1>
-          <p className="text-neutral-500/70 tracking-tight leading-5">
-            Currently working at SAY Design Studio. Once I start something I
-            love, I finish it. love, I finish it.
+            <p className="namefont text-2xl leading-none">Hey! I'm</p>
+            <p className="Heyfont text-4xl leading-none">Priya Bhatt</p>
+          </div>
+          <p className="text-neutral-500/80 tracking-tight leading-5">
+            Currently working at <span className="bg-orange-300/40 text-neutral-700">SAY Design Studio</span>. Once I start
+            something I love, I finish it. love, I finish it.
           </p>
         </div>
       </div>
