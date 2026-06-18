@@ -1,5 +1,6 @@
 import { MapPin, SunMedium, MoonStar, Monitor } from "lucide-react";
 import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 import { useState } from "react";
 
 const App = () => {
@@ -74,7 +75,9 @@ const App = () => {
             onMouseLeave={() => setPlay(false)}
           >
             <p className="namefont text-2xl leading-none">Hey! I'm</p>
-            <p className="Heyfont text-4xl leading-none">Priya Bhatt</p>
+            <p className="Heyfont text-4xl leading-none hover:text-blue-700 transition-colors duration-150">
+              Priya Bhatt
+            </p>
           </div>
           <p className="text-neutral-500/80 tracking-tight leading-5">
             Currently working at{" "}
@@ -86,6 +89,7 @@ const App = () => {
         </div>
       </div>
       <Experience />
+      <Footer />
     </div>
   );
 };
