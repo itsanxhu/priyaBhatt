@@ -5,7 +5,7 @@ import { useState } from "react";
 const App = () => {
   const [play, setPlay] = useState(false);
   return (
-    <div className="max-w-4xl min-h-screen mx-auto pt-3 border-x border-neutral-600/20">
+    <div className="max-w-4xl min-h-screen mx-auto pt-3">
       {/* Header */}
       <div className="h-18 flex justify-between items-center px-8">
         <div className="flex items-center gap-1">
@@ -77,8 +77,11 @@ const App = () => {
             <p className="Heyfont text-4xl leading-none">Priya Bhatt</p>
           </div>
           <p className="text-neutral-500/80 tracking-tight leading-5">
-            Currently working at <span className="bg-orange-300/40 text-neutral-700">SAY Design Studio</span>. Once I start
-            something I love, I finish it. love, I finish it.
+            Currently working at{" "}
+            <span className="bg-orange-300/40 text-neutral-700">
+              SAY Design Studio
+            </span>
+            . Once I start something I love, I finish it. love, I finish it.
           </p>
         </div>
       </div>
